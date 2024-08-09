@@ -1,0 +1,404 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu Toggle Button */
+nav{
+    background-color: #2c3e50;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+}
+nav a:hover{
+    background-color: #3a4f64;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.63);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+  
+
+/* Hero Section Styles */
+
+.hero {
+    background: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../images/bbva-energia.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero .btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+
+/* Introduction Section */
+#introduccion {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+#introduccion .content {
+    flex: 1;
+    margin-right: 2em;
+    text-align: justify;
+}
+
+#introduccion .image {
+    flex: 1;
+    text-align: center;
+}
+
+#introduccion .image img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* Benefits Section */
+#beneficios {
+    background: #ecf0f1;
+    padding: 2rem;
+    text-align: center;
+}
+
+#beneficios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#beneficios ul li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+/* Tools Section */
+#herramientas {
+    padding: 2rem;
+}
+
+#herramientas .tool {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+#herramientas .tool .image {
+    flex: 1;
+}
+
+#herramientas .tool .image img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+#herramientas .tool .content {
+    flex: 2;
+}
+
+#herramientas .tool h3 {
+    font-size: 1.5rem;
+}
+
+#herramientas .tool p {
+    margin: 0.5rem 0;
+}
+
+#herramientas .tool .btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* Blog Section */
+#blog {
+    background: #ecf0f1;
+    padding: 2rem;
+}
+
+#blog .articles {
+    display: flex;
+    gap: 1rem;
+}
+
+#blog article {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+#blog article img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#blog article h3 {
+    font-size: 1.2rem;
+    margin: 2rem 1rem;
+}
+
+#blog article p {
+    margin: 1.5rem 1rem;
+}
+
+#blog article .btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* Community Section */
+#comunidad {
+    padding: 2rem;
+    text-align: center;
+}
+
+#comunidad .btn {
+    background: #27ae60;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* Testimonials Section */
+#testimonios {
+    background: #ecf0f1;
+    padding: 2rem;
+}
+
+#testimonios blockquote {
+    background: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#testimonios blockquote img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#testimonios blockquote cite {
+    font-style: normal;
+    color: #7f8c8d;
+}
+
+/* Footer Styles */
+footer {
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+footer .links, footer .social, footer .contact {
+    flex: 1;
+    margin: 1rem;
+}
+
+footer .links a, footer .social a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+footer .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer .contact form input, footer .contact form button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+/* Responsive Styles */
+@media(max-width: 1390px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+}
+
+@media (max-width: 950px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    #introduccion {
+        flex-direction: column;
+        text-align: center;
+        font-size: 0.85rem;
+    }
+
+    #introduccion .content, #introduccion .image {
+        flex: none;
+    }
+
+    #herramientas .tool .image img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    #blog .articles {
+        flex-direction: column;
+    }
+
+    footer .links, footer .social, footer .contact {
+        margin: 0;
+    }
+}
+
+@media(max-width: 650px){
+
+    #herramientas .tool .image img {
+        width: 100%;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media(max-width:450px){
+    #beneficios h2{
+        font-size: 1.1rem;
+    }
+
+    #beneficios p{
+        font-size: 0.9rem;
+    }
+
+    #herramientas .tool h3 {
+        font-size: 1.2rem;
+    }
+
+    #herramientas p{
+        font-size: 0.8rem
+    }
+
+    #herramientas h2{
+        font-size: 1.2rem;
+    }
+
+    .articles{
+        font-size: 85%;
+    }
+
+    #comunidad{
+        font-size: 85%;
+    }
+
+    #testimonios h2{
+        font-size: 1.2rem;
+    }
+
+    .testimonios{
+        font-size: 80%;
+    }
+}
+
+@media(max-width: 350px){
+    .sidebar{
+      width: 100%;
+    }
+
+    #herramientas h2{
+        font-size: 1rem;
+    }
+
+    #herramientas .tool h3 {
+        font-size: 1rem;
+    }
+
+    #herramientas p{
+        font-size: 0.75rem
+    }
+}

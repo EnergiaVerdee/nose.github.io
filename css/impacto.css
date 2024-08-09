@@ -1,0 +1,200 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styles */
+nav{
+    background-color: #2c3e50;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+}
+nav a:hover{
+    background-color: #3a4f64;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.63);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+
+/* Impact Section Styles */
+.impact-section {
+    padding: 2rem;
+    text-align: left;
+}
+
+.impact-section h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.impact-section p {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.impact-section .impact-info,
+.impact-section .impact-actions {
+    margin-bottom: 2rem;
+}
+
+.impact-section .impact-info h3,
+.impact-section .impact-actions h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.impact-section .impact-info ul,
+.impact-section .impact-actions ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.impact-section .impact-image {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+footer .links, footer .social, footer .contact {
+    flex: 1;
+    margin: 1rem;
+}
+
+footer .links a, footer .social a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+footer .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer .contact form input, footer .contact form button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+@media(max-width: 1390px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .impact-section {
+        padding: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .links, footer .social, footer .contact {
+        flex: none;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    footer .contact form {
+        align-items: center;
+    }
+
+    footer .contact form input, footer .contact form button {
+        width: 100%;
+    }
+}
+
+@media(max-width: 650px){
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .impact-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .impact-section .impact-info h3,
+    .impact-section .impact-actions h3 {
+        font-size: 1.2rem;
+    }
+
+    .impact-section p,
+    .impact-section ul {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width: 350px){
+    .sidebar{
+      width: 100%;
+    }
+}
